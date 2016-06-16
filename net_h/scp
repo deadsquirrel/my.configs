@@ -1,0 +1,9 @@
+все рекурсивно из SourseFolder to TargetFolder
+scp -r user@host:'/directory/SourceFolder ' ./TargetFolder/
+
+
+Copy multiple files from the remote host to your current directory on the local host
+
+    $ scp your_username@remotehost.edu:/some/remote/directory/\{a,b,c\} . 
+
+    $ scp your_username@remotehost.edu:~/\{foo.txt,bar.txt\} . 
