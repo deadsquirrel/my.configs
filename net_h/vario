@@ -1,0 +1,32 @@
+ls -la  |egrep -v '^(drw|drx)'
+ls squeak 
+du -sh squeak 
+du -sh squeak/*
+du -sh .squeak 
+ls -la squeak 
+ls -la .squeak
+
+
+midgardr% ls -la  |egrep -v '^(d|-)'    
+загалом 1992
+lrwxrwxrwx   1 yanki yanki     26 січ 26  2015 mudlet-data -> /home/yanki/.config/mudlet
+lrwxrwxrwx   1 yanki yanki     19 січ 18  2014 squeak -> /home/yanki/.squeak
+midgardr% ls squeak 
+My Squeak  *.sources
+midgardr% ls -l squeak 
+lrwxrwxrwx 1 yanki yanki 19 січ 18  2014 squeak -> /home/yanki/.squeak
+midgardr% du -sh squeak 
+0       squeak
+midgardr% du -sh squeak/*
+0       squeak/My Squeak
+0       squeak/*.sources
+midgardr% du -sh .squeak 
+0       .squeak
+midgardr% ls -la squeak 
+lrwxrwxrwx 1 yanki yanki 19 січ 18  2014 squeak -> /home/yanki/.squeak
+midgardr% ls -la .squeak
+загалом 12
+drwxr-xr-x   3 yanki yanki   38 січ 18  2014 .
+drwxrwxr-x 156 yanki yanki 8192 чер 16 22:36 ..
+drwxr-xr-x   2 yanki yanki    6 січ 18  2014 My Squeak
+lrwxrwxrwx   1 yanki yanki   27 січ 18  2014 *.sources -> /usr/share/squeak/*.sources
