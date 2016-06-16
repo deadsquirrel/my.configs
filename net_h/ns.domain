@@ -1,0 +1,74 @@
+#===
+%dig metenergo.com.ua @ns12.uadns.com
+
+; <<>> DiG 9.9.5-9+deb8u6-Debian <<>> metenergo.com.ua @ns12.uadns.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37976
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 3, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;metenergo.com.ua.              IN      A
+
+;; ANSWER SECTION:
+metenergo.com.ua.       14400   IN      A       91.209.206.76
+
+;; AUTHORITY SECTION:
+metenergo.com.ua.       28800   IN      NS      ns11.uadns.com.
+metenergo.com.ua.       28800   IN      NS      ns10.uadns.com.
+metenergo.com.ua.       28800   IN      NS      ns12.uadns.com.
+
+;; Query time: 45 msec
+;; SERVER: 178.62.231.61#53(178.62.231.61)
+;; WHEN: Thu Jun 16 22:36:29 EEST 2016
+;; MSG SIZE  rcvd: 127
+
+#===
+% host metenergo.com.ua            
+metenergo.com.ua has address 212.1.94.230
+metenergo.com.ua mail is handled by 10 ASPMX.L.GOOGLE.COM.
+
+
+#===
+r% whois metenergo.com.ua
+% request from 213.111.80.227
+% This is the Ukrainian Whois query server #I.
+% The Whois is subject to Terms of use
+% See https://hostmaster.ua/services/
+%
+
+domain:           metenergo.com.ua
+dom-public:       NO
+registrant:       ukif1947
+admin-c:          ukif1947
+tech-c:           nic
+mnt-by:           ua.nic
+nserver:          ns12.uadns.com
+nserver:          ns11.uadns.com
+nserver:          ns10.uadns.com
+status:           ok
+created:          2010-03-23 20:18:30+02
+modified:         2016-06-16 22:35:55+03
+expires:          2017-03-23 20:18:30+02
+source:           UAEPP
+
+% Registrar:
+% ==========
+registrar:        ua.nic
+organization:     NIC.UA LLC
+organization-loc: ТОВ "НІК.ЮЕЙ"
+url:              http://nic.ua
+city:             Dnipropetrovsk
+country:          UA
+source:           UAEPP
+....
+
+#===
+%dig metenergo.com.ua @ns.nic.ua
+
+#===
+#=mail=
+% dig metenergo.com.ua @NS.KILOBYTE.COM.UA MX
