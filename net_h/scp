@@ -6,4 +6,29 @@ Copy multiple files from the remote host to your current directory on the local 
 
     $ scp your_username@remotehost.edu:/some/remote/directory/\{a,b,c\} . 
 
-    $ scp your_username@remotehost.edu:~/\{foo.txt,bar.txt\} . 
+    $ scp your_username@remotehost.edu:~/\{foo.txt,bar.txt\} .
+
+---
+ssh-keygen (/usr/bin/ssh-keygen)
+
+Генератор пар ключей.
+
+---
+ssh-keysign (/usr/lib/openssh/ssh-keysign)
+
+Утилита для проверки ключей хостов. Задействуется при использовании аутентификации по хостам (аналогично rsh) вместо проводимой по умолчанию аутентификации по пользователям/паролям.
+
+---
+ssh-keyscan (/usr/bin/ssh-keyscan)
+
+Вспомогательная утилита. Позволяет за считанные секунды собрать публичные ключи с других хостов.
+
+---
+ssh-agent (/usr/bin/ssh-agent)
+
+Вспомогательная утилита. Поддерживает кэш закрытых ключей. Кэширование позволяет избегать частого ввода пароля для расшифровки ключей перед их использованием.
+
+---
+ssh-add (/usr/bin/ssh-add)
+
+Вспомогательная утилита. Добавляет ключи в кэш ssh-agent.
