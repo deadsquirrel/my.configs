@@ -30,3 +30,33 @@ drwxr-xr-x   3 yanki yanki   38 січ 18  2014 .
 drwxrwxr-x 156 yanki yanki 8192 чер 16 22:36 ..
 drwxr-xr-x   2 yanki yanki    6 січ 18  2014 My Squeak
 lrwxrwxrwx   1 yanki yanki   27 січ 18  2014 *.sources -> /usr/share/squeak/*.sources
+
+
+$ dd if=$input_data of=$output_data [options]
+% mount
+/dev/sde1 on /media/yanki/Transcend type vfat (rw,nosuid,nodev,relatime,uid=1001,gid=1001,fmask=0022,dmask=0077,codepage=437,iocharset=utf8,shortname=mixed,showexec,utf8,flush,errors=remount-ro,uhelper=udisks2)
+
+ % dd if=/tmp/debian-8.5.0-amd64-netinst.iso of=/dev/sde
+ % vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 2  1      0 13808244 650140 3370332    0    0    20    20   58   69  9  2 89  0  0
+%dpkg -L sysstat
+#dpkg -L sysstat |grep bin
+%iostat
+Linux 3.16.0-4-amd64 (midgardr)         07/06/2016      _x86_64_        (6 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           8.77    0.17    1.78    0.50    0.00   88.78
+
+Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+sda               0.45         5.93         0.05     318597       2672
+sdb               0.17         3.74         0.06     200772       3169
+sdd               4.66        37.48        61.40    2012916    3297824
+sdc               0.97        17.09         0.13     917889       7140
+md0               0.15         0.58         0.00      31415         12
+md1               0.05         0.21         0.00      11305         12
+md2               0.01         0.02         0.00       1182          0
+md3               0.06         0.22         0.00      11709         48
+md4               0.15         3.59         0.01     193023        296
+sde               0.93        55.72         4.82    2992726     258989
