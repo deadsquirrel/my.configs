@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="02.depend" default = "all">
+  <description>this is a project! It uses dependencies </description>
+  
+  <target name="make.dirs" description="MAke a dir">
+    <mkdir dir="build_yanki" />
+  </target>
+
+  <target name="all" description="Do the build" depends="make.dirs">
+    <echo> i 4o</echo>
+  </target>
+</project>
