@@ -3,10 +3,17 @@
   <description>this is a project! It uses dependencies </description>
   
   <target name="make.dirs" description="MAke a dir">
-    <mkdir dir="build_yanki" />
+    <mkdir dir="build_yanki2" />
   </target>
 
   <target name="all" description="Do the build" depends="make.dirs">
     <echo> i 4o</echo>
   </target>
+
+
+  <target name="clean" description="clean up">
+    <echo> i am cleaning up</echo>
+    <delete dir="build_yanki2" />
+  </target>
+
 </project>
