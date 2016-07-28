@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="yanki_deploy" default = "deploy_step1"
+         basedir="{{server_root}}{{subdomain}}.horoshop.com.ua/"
+>
+  
+    <property name="subdomain" value="{{subdomain}}"/>
+    <property name="db.name" value="{{db_name}}"/>
+    <property name="db.user" value="{{db_user}}"/>
+    <property name="db.pass" value="{{db_pass}}"/>
+
+    <property name="build" value="{{build}}"/>
+
+    <property name="ftp.web.host" value="{{ftp.web.host}}"/>
+    <property name="ftp.web.port" value="{{ftp.web.port}}"/>
+    <property name="ftp.web.username" value="{{ftp.web.user}}"/>
+    <property name="ftp.web.password" value="{{ftp.web.pass}}"/>
+
+    <!--
+        ??<property name="ftp.web.mode" value="binary"/>
+        -->
+    <property name="ftp.web.dir" value="{{ftp.web.dir}}"/>
+    <property name="web.domain" value="http://{{webdomain}}"/
+
+
+    
+
+  <target name="">
+
+	</target>
+</project>
